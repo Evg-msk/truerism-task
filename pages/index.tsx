@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Spinner } from "@chakra-ui/core";
+import { Container, Spinner, Heading } from "@chakra-ui/core";
 import { useQuery } from "react-query";
+
 
 type Hotel = {
   id?: number;
@@ -40,7 +41,7 @@ const DemoPage = () => {
 
   return (
     <Container>
-      <pre>{JSON.stringify(toursRequest.data, null, 2)}</pre>
+      {/*<pre>{JSON.stringify(toursRequest.data, null, 2)}</pre>*/}
     </Container>
   );
 };
